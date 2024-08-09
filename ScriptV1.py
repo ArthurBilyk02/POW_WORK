@@ -11,7 +11,7 @@ inbox = outlook.Folders.Item("support@portofwaterford.com").Folders.Item("Inbox"
 save_folder = os.path.expanduser("~/Desktop/AntivirusLogs")
 os.makedirs(save_folder, exist_ok=True)
 
-# Iterate through the emails
+# Iterate through the emails (check 2CB8ED7C7280 this is where subject is written)
 messages = inbox.Items
 for message in messages:
     if message.Class == 43: # Check if the item is a MailItem
